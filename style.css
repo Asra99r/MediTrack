@@ -1,0 +1,291 @@
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 0px;
+    background-color: #f0fdfa;
+    padding: 10px 30px;
+   
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0; 
+}
+
+a {
+    text-decoration: none; 
+    color: #4b5563;
+}
+.nav-links :hover{
+    color: aqua;
+}
+
+
+#home {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 50px 10%;
+    gap: 50px;
+}
+
+.welcome-text h1 {
+    font-size: 3.5rem; 
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+.welcome-text strong {
+    color: rgb(28, 201, 143);
+    display: block; 
+}
+.welcome-text p{
+    color: #4b5563;
+}
+
+.badge {
+    background-color: #e6fffa;
+    color: #0d9488;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+.btn-primary {
+    background-color: rgb(0, 150, 136); 
+    width: 180px;
+    height: 55px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.btn-primary:hover {
+    background-color: rgb(28, 201, 143);
+    transition: 0.3s;
+}
+.btn-primary a{
+    color: #f0fdfa;
+}
+.services-container {
+    display: flex;
+    flex-wrap: wrap; /* يسمح بالعناصر بالنزول لسطر جديد في الشاشات الصغيرة فقط */
+    justify-content: center; /* لتوسيط المربعات في منتصف الصفحة */
+    gap: 20px;
+    padding: 0px ; /* مسافة من اليمين واليسار لضمان عدم الالتصاق بالحواف */
+    width: auto;
+}
+
+.service-card {
+    /* هذا السطر هو السر: يحدد أن المربع يأخذ تقريباً ثلث المساحة */
+    flex: 1 1 calc(30% - 20px); 
+    
+    /* لضمان أن المربعات لا تصبح صغيرة جداً أو كبيرة جداً */
+    min-width: 280px; 
+    max-width: 350px;
+
+   
+    background-color: #e6fffa;
+
+    padding: 30px;
+    border-radius: 35px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+
+.service-card:hover {
+    transform: translateY(-10px);
+
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #4b5563;
+}
+.line{
+    
+    margin: 30px;
+ 
+    width: 700px;
+    height: 1px;
+    background-color: #868686;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer strong{
+    color:  rgb(28, 201, 143);
+    font-size: larger;
+    font-size: 1.5rem;
+ 
+}
+
+
+/* --- Pharmacy Catalog --- */
+.container{
+    background-color: #f0fdfa;
+    width: auto;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px ;
+     max-width: 950px; 
+     margin: 20px auto;
+    
+}
+.form-control{
+    background-color: transparent;
+    border: none !important;
+    outline: none;
+    height: 100%;
+    width: 100%;
+}
+.form-control::placeholder {
+    color: #7f8185;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.Search-icon {
+    color: #005a35;
+    margin-right: 10px;
+}
+
+
+
+.main{
+    background-color: #0d9488;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    margin: 20px auto;
+    border-radius: 25px; 
+    max-width: 950px; 
+    height: 150px; 
+    color: white;
+
+}
+
+
+/* --- category --- */
+.category-list {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.cat-item {
+    background: #f1f5f9;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-weight: 500;
+    color: #38414e;
+    cursor: pointer;
+}
+.Categories{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    margin: 20px auto;
+    border-radius: 25px; 
+    max-width: 950px; 
+   
+}
+.Categories p{
+    font-size: 1.6rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+/* --- products-grid--- */
+
+
+
+
+.product-card {
+    background-color: #fff;
+    width: 150px;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px; 
+    padding: 20px;
+    position: relative;
+}
+
+.product-img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.product-title {
+    font-size: 18px;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.price {
+    color: #0d9488; 
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left; 
+}
+
+
+.add-button {
+    background-color: #2dd4bf;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute; 
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.add-button:hover {
+    background-color: #0d9488;
+    transform: scale(1.1);
+}
+.cards{
+    display: flex;
+    gap :30px;
+ 
+    justify-content: center;
+    background-color: #0d9488;
+}
+
+
+
+
+
+
+
