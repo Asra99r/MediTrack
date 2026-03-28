@@ -80,28 +80,20 @@ a {
 }
 .services-container {
     display: flex;
-    flex-wrap: wrap; /* يسمح بالعناصر بالنزول لسطر جديد في الشاشات الصغيرة فقط */
-    justify-content: center; /* لتوسيط المربعات في منتصف الصفحة */
+    justify-content: center;
     gap: 20px;
-    padding: 0px ; /* مسافة من اليمين واليسار لضمان عدم الالتصاق بالحواف */
-    width: auto;
+    margin:30px;
+   
 }
 
 .service-card {
-    /* هذا السطر هو السر: يحدد أن المربع يأخذ تقريباً ثلث المساحة */
-    flex: 1 1 calc(30% - 20px); 
-    
-    /* لضمان أن المربعات لا تصبح صغيرة جداً أو كبيرة جداً */
-    min-width: 280px; 
-    max-width: 350px;
-
    
+    flex: 0 0 calc(33.33% - 20px); 
     background-color: #e6fffa;
-
     padding: 30px;
     border-radius: 35px;
     text-align: center;
-    transition: transform 0.3s ease;
+  
 }
 
 
@@ -116,13 +108,48 @@ a {
     align-items: center;
     color: #4b5563;
 }
+
+
+.reminder-section{
+     display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px;
+    padding: 0px ; 
+    width: auto;
+    margin-top: 40px;
+  
+}
+.reminder-card
+{
+  background-color: #9fe7d9;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.reminder-icon{
+    font-size: 3rem;
+}
+.reminder-card input{
+    background-color: transparent;
+    border-radius: 30px;
+    border-color:bisque ;
+    color: #06110f;
+}
+
+
+
+
+
+
 .line{
     
     margin: 30px;
  
-    width: 700px;
+    width: 300px;
     height: 1px;
-    background-color: #868686;
+    background-color: #c3ffc8;
     margin-left: auto;
     margin-right: auto;
 }
@@ -135,6 +162,7 @@ footer strong{
 
 
 /* --- Pharmacy Catalog --- */
+
 .container{
     background-color: #f0fdfa;
     width: auto;
@@ -165,7 +193,38 @@ footer strong{
     margin-right: 10px;
 }
 
+.Search_home{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 10px 20px;
+    max-width: 950px;
 
+    margin: 20px auto; }
+
+.container{
+    flex: 3;   
+    max-width: 950px;
+}
+.home-btn{
+    background-color: #0d9488;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s;
+    flex: 1;
+    max-width: 60px; 
+}
+
+.home-btn:hover{
+    background-color: #0f766e;
+}
 
 .main{
     background-color: #0d9488;
@@ -176,7 +235,7 @@ footer strong{
     margin: 20px auto;
     border-radius: 25px; 
     max-width: 950px; 
-    height: 150px; 
+    height: 170px; 
     color: white;
 
 }
@@ -216,8 +275,6 @@ footer strong{
 
 
 /* --- products-grid--- */
-
-
 
 
 .product-card {
@@ -275,17 +332,30 @@ footer strong{
     background-color: #0d9488;
     transform: scale(1.1);
 }
-.cards{
+
+
+.cards {
     display: flex;
-    gap :30px;
- 
-    justify-content: center;
-    background-color: #0d9488;
+    gap: 30px;
+    justify-content: flex-start; 
+    flex-wrap: wrap; 
+    
+    max-width: 950px; 
+    margin: 0 auto;  
+    padding: 20px;
 }
 
 
+.pruduct {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pruduct h2{
+    margin: 0; 
+    padding-left: 10px; 
 
 
-
-
+}
 
