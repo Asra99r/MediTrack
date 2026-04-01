@@ -5,31 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - MediTrack</title>
 
-    <!-- ربط CSS -->
-    <link rel="stylesheet" href="contact.css">
+    
+    <link rel="stylesheet" href="CSS\contact.css">
 
-    <!-- أيقونات -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-
 <header>
     <nav>
         <div class="logo-container">
-            <img src="Media\LOGO.png" alt="MediTrack Logo">
+            <img src="media/Logo.png" alt="MediTrack Logo">
         </div>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pharmacy.html">Pharmacy Catalog</a></li>
-            <li><a href="About-us.html">About Us</a></li>
-            <li><a href="Contact-us.html">Contact Us</a></li>
-        </ul>
+   <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pharmacy1.html">Pharmacy Catalog</a></li>
+                <li><a href="About-us.html">About Us</a></li>
+                <li><a href="Contact-us.html">Contact Us</a></li>
+            </ul>
     </nav>
 </header>
 
-<!-- Contact Section -->
+
 <section class="contact-container">
 
     <div class="contact-text">
@@ -41,25 +40,82 @@
 
     <form class="contact-form">
 
+    
+    <div class="row">
         <div class="input-group">
-            <input type="text" placeholder="Your Name" required>
+            <input type="text" placeholder="First Name" required maxlength="20">
         </div>
 
         <div class="input-group">
-            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Last Name" required maxlength="20">
         </div>
+    </div>
 
-        <div class="input-group">
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-        </div>
+    
+    <div class="gender-group">
+    <p>Gender:</p>
 
-        <button type="submit" class="btn-primary">Send Message</button>
+    <label class="gender-option">
+        <input type="radio" name="gender" value="male" required>
+        Male
+    </label>
 
-    </form>
+    <label class="gender-option">
+        <input type="radio" name="gender" value="female">
+        Female
+    </label>
+    </div>
+
+    
+    <div class="input-group">
+        <input type="tel" placeholder="Mobile Number" 
+        pattern="[0-9]{10}" 
+        maxlength="10" 
+        required>
+    </div>
+
+    
+    <div class="input-group">
+        <label>Date of Birth:</label>
+        <input type="date" required>
+    </div>
+
+    
+    <div class="input-group">
+        <input type="email" placeholder="Email Address" required>
+    </div>
+
+    
+    <div class="input-group">
+        <label>Preferred Language:</label>
+        <select required>
+            <option value="">Select Language</option>
+            <option>Arabic</option>
+            <option>English</option>
+            <option>French</option>
+        </select>
+    </div>
+
+    
+    <div class="input-group">
+        <input type="text" placeholder="Subject" maxlength="50">
+    </div>
+
+    
+    <div class="input-group">
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+    </div>
+
+    <button type="submit" class="btn-primary">Send Message</button>
+
+    
+    <p class="success-message">✅ Message ready to send!</p>
+
+</form>
 
 </section>
 
-<!-- Footer -->
+
 <footer>
     <div class="line"></div>
 
@@ -70,7 +126,7 @@
             Stay connected with us through our social platforms
         </p>
 
-        <!-- Social Icons -->
+        
         <div class="social-icons">
             <a href="https://twitter.com" target="_blank">
                 <i class="fab fa-twitter"></i>
@@ -95,7 +151,7 @@
         </p>
     </div>
 
-    <!-- الشريط الأخضر -->
+    
     <div class="bottom-bar"></div>
 </footer>
 
